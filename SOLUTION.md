@@ -1,7 +1,7 @@
 # IAM Basics Lab - Solution
 
-**Student Name:** [Your Name]  
-**Date Completed:** [Date]
+**Student Name:** Theo Boyesen
+**Date Completed:** 3/2/26
 
 ---
 
@@ -192,7 +192,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Explain benefits: easier management, consistency, scalability, etc.]
+It is easier to manage and scale beacuse you can edit permissions for multuple users at once. Is more time efficient and also allows less room for human error.
 
 ---
 
@@ -200,7 +200,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Discuss: security risks, accidental changes, compliance issues, etc.]
+There are security risks as users would have full admin access so they could create instances leading to unexpected costs, steal access keys if they leave the company. Also in-experienced users could accidentally change things and it cannot be traced or rolled back. 
 
 ---
 
@@ -208,7 +208,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Propose structure: project-based groups, role-based access, tagging strategy, etc.]
+I would create individual IAMs for each user then create project based & role based groups to manage permissions effectively. There would then be seperate groups for different permission levels.
 
 ---
 
@@ -216,7 +216,7 @@ $ aws s3 ls --profile alice
 
 **Your Answer:**
 
-[Explain: user deletion is permanent, permissions can be recreated but history lost, etc.]
+No, deletion is permananent. Permissions can be recreated but history is lost. They can be re added to the correct groups.
 
 ---
 
@@ -224,19 +224,19 @@ $ aws s3 ls --profile alice
 
 **What was most challenging about this lab?**
 
-[Your reflection]
+Knowing the different IAM components and what they're used for      
 
 ---
 
 **What IAM best practice will you always follow?**
 
-[Your reflection]
+Every user gets their own IAM and has to change password and enable MFA. Also creating groups for easy and scaleable permission management.
 
 ---
 
 **How does IAM help implement the principle of least privilege?**
+It gives users only the permissions needed to do their job and nothing more.
 
-[Your reflection]
 
 ---
 
@@ -255,5 +255,5 @@ $ aws s3 ls --profile alice
 
 ---
 
-**Completed By:** [Your Name]  
+**Completed By:** theo boyesen
 **Date:** [Date]
